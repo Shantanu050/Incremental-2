@@ -10,7 +10,7 @@ namespace dotnetapp.Models
         [Required(ErrorMessage="Name is required.")]
         public string Name{get;set;}
         public string Category{get;set;}
-        [Required(ErrorMessage="Bidding amount must be greater than 0.")]
+        [Range(0,int.MaxValue,ErrorMessage="Bidding amount must be greater than 0.")]
         public decimal BiddingAmount{get;set;}
         [ForeignKey("Team")]
         public int TeamId{get;set;}

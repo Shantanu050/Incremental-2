@@ -39,7 +39,8 @@ namespace dotnetapp.Controllers
             }
             return View();
         }     
-
+         
+        [HttpGet]
         public IActionResult Edit(int id)
         {
             var data=_context.Players.Find(id);
@@ -61,6 +62,7 @@ namespace dotnetapp.Controllers
             }
             return View();
         }
+        [HttpGet]
         public IActionResult DeleteConfirmed(int id)
         {
              var data=_context.Players.Find(id);
@@ -75,7 +77,7 @@ namespace dotnetapp.Controllers
             return RedirectToAction("Index");
 
         }
-
+        [HttpGet]
         public IActionResult Delete(int id)
         {
              var data=_context.Players.Find(id);
