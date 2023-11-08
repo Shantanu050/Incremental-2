@@ -6,6 +6,7 @@ namespace dotnetapp.Models
 {
     public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
+        public 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
