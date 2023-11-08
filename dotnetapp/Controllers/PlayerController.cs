@@ -31,13 +31,9 @@ namespace dotnetapp.Controllers
         [HttpPost]
         public IActionResult Create(Player player)
         {
-            if(ModelState.IsValid)
-            {
                 _context.Players.Add(player);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            }
-            return View();
         }     
          
         [HttpGet]
