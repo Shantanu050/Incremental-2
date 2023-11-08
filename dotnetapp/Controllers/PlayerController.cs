@@ -15,11 +15,11 @@ namespace dotnetapp.Controllers
         {
             _context = context;
         }
-        
+
         [Route("")]
         public IActionResult Index()
         {
-            var data=_context.Players.ToList();
+            var data=_context.Players;
             return View(data);
         }
         
@@ -43,7 +43,7 @@ namespace dotnetapp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var data=_context.Players.Find(id);
+            var data=_context.Players.Find(Convert.ToInt32(id));
             return View(data);
         }
         
