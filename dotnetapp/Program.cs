@@ -13,6 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Add your DbContext and Identity services
+var constr=builder.Configuration.GetConnectionString("DevConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(constr));
 // ...
 
 var app = builder.Build();
