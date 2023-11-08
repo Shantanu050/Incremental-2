@@ -23,13 +23,15 @@ namespace dotnetapp.Controllers
             return View(data);
         }
         
-    
+       [Route("create")]
         public IActionResult Create()
         {
              return View();
         }
 
         [HttpPost]
+       [Route("create")]
+
         public IActionResult Create(Player player)
         {
                 _context.Players.Add(player);
