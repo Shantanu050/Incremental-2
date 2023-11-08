@@ -14,13 +14,15 @@ namespace dotnetapp.Controllers
         {
             _context = context;
         }
-
+        
+        [Route("")]
         public IActionResult Index()
         {
             var data=_context.Players.ToList();
             return View(data);
         }
-
+        
+        [Route("create")]
         public IActionResult Create()
         {
              return View();
@@ -59,12 +61,34 @@ namespace dotnetapp.Controllers
             }
             return View();
         }
-
+        public IActionResult DeleteConfirmed(int id)
+        {
+             var data=_context.Players.Find(id);
+             return View(data);
+        }
+        [HttpPost]
         public IActionResult DeleteConfirmed(Player player)
         {
-            Player deletedPlayer=_context.Players.Find(id);
+            Player deletedPlayer=_context.Players.Find(player.Id);
             _context.Players.Remove(deletedPlayer);
             _context.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Delete(int id)
+        {
+             var data=_context.Players.Find(id);
+             return View(data);
+        }
+        [HttpPost]
+        public IActionResult Delete(Player player)
+        {
+            Player deletedPlayer=_context.Players.Find(player.Id);
+            _context.Players.Remove(deletedPlayer);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+
         }
     }
 }
