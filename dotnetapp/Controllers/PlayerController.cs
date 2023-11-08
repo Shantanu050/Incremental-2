@@ -43,7 +43,7 @@ namespace dotnetapp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var data=_context.Players.Find(Convert.ToInt32(id));
+            var data=_context.Players.Find(id);
             return View(data);
         }
         
