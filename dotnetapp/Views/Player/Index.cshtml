@@ -16,10 +16,10 @@
                 <td>@item.Category</td>
                 <td>@item.BiddingAmount</td>
                 <td>@item.TeamId</td>
-                <td>@Html.ActionLink("Delete","Delete","Player",new{id=@item.Id})</td>
-                <td>@Html.ActionLink("Edit","Edit","Player",new{id=@item.Id})</td>
+                <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id})</td>
+                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id})</td>
             </tr>
         }
     </tbody>
 </table>
-<center>@Html.ActionLink("Add Record","Create")</center>
+<center>@Html.ActionLink("Add Record","Create","Player")</center>

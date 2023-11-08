@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 using dotnetapp.Models;
 
 namespace dotnetapp.Controllers
@@ -22,7 +23,7 @@ namespace dotnetapp.Controllers
             return View(data);
         }
         
-        [Route("create")]
+    
         public IActionResult Create()
         {
              return View();
@@ -34,6 +35,7 @@ namespace dotnetapp.Controllers
                 _context.Players.Add(player);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
+                return View();
         }     
          
         [HttpGet]
