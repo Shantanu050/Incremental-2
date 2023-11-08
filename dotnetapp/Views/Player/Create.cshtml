@@ -1,0 +1,26 @@
+@model dotnetapp.Models.Player
+@using(Html.BeginForm())
+{
+    @Html.DisplayNameFor(m=>m.Name)
+    <br>
+    @Html.EditorFor(m=>m.Name)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.Category)
+    <br>
+    @Html.EditorFor(m=>m.Category)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.BiddingAmount)
+    <br>
+    @Html.EditorFor(m=>m.BiddingAmount)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.TeamId)
+    <br>
+    @Html.EditorFor(m=>m.TeamId)
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" value="Add Player">
+
+}

@@ -1,0 +1,24 @@
+@model IEnumerable<dotnetapp.Models.Player>
+<table class="table">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Bidding Amount</th>
+        <th>Team Id</th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Category</td>
+                <td>@item.BiddingAmount</td>
+                <td>@item.TeamId</td>
+                <td>@Html.ActionLink("Delete","Delete","Player",new{id=@item.Id})</td>
+                <td>@Html.ActionLink("Edit","Edit","Player",new{id=@item.Id})</td>
+            </tr>
+        }
+    </tbody>
+</table>
