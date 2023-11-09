@@ -37,10 +37,10 @@ namespace dotnetapp.Controllers
                 _context.Players.Add(player);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-                return View();
+               // return View();
         }     
-         
-        [HttpGet]
+        
+    
         public IActionResult Edit(int id)
         {
             var data=_context.Players.Find(id);
