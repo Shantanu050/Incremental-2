@@ -6,7 +6,7 @@ namespace dotnetapp.Models
 {
     public class Team{
         [Key]
-        public int TeamId{get;set;}
+        public int Id{get;set;}
         public string Name{get;set;}
         public ICollection<Player>Player{get;set;}
     }
