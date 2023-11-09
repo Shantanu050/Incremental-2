@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/coder/project/workspace/dotnetapp/Views/Player/FindPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0ZpbmRQbGF5ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/coder/project/workspace/dotnetapp/Views/Player/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

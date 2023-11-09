@@ -8,4 +8,28 @@
     <input type="submit" class="btn btn-primary">
 
 }
-@if(T)
+@if(Convert.ToInt32(TempData["req"])==1)
+{
+   <b>@Html.DisplayNameFor(m=>m.Id)</b> <br>
+    @Html.DisplayFor(m=>m.Id)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.Name) <br>
+    @Html.DisplayFor(m=>m.Name)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.Category) <br>
+    @Html.DisplayFor(m=>m.Category)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.Category) <br>
+    @Html.DisplayFor(m=>m.Category)
+    <br>
+    <br>
+    @Html.DisplayNameFor(m=>m.BiddingAmount) <br>
+    @Html.DisplayFor(m=>m.BiddingAmount)
+    <br>
+    <br>
+    
+}
+@Html.ActionLink("Back to List","Index","Player")
