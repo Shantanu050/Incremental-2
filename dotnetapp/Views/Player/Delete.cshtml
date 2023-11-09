@@ -1,0 +1,21 @@
+@model Player
+@using(Html.BeginForm())
+{
+    @Html.DisplayNameFor(m=>m.Id)
+    @Html.DisplayFor(m=>m.Id)
+    <br>
+    @Html.DisplayNameFor(m=>m.Name)
+    @Html.DisplayFor(m=>m.Name)
+    <br>
+    @Html.DisplayNameFor(m=>m.Category)
+    @Html.DisplayFor(m=>m.Category)
+    <br>
+    @Html.DisplayNameFor(m=>m.TeamId)
+    @Html.DisplayFor(m=>m.TeamId)
+    <br>
+    @Html.DisplayNameFor(m=>m.BiddingAmount)
+    @Html.DisplayFor(m=>m.BiddingAmount)
+    <br>
+     
+     <input type="submit" class="btn btn-danger" value="Delete">
+}
