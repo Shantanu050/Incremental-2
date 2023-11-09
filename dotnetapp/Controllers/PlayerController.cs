@@ -24,7 +24,7 @@ namespace dotnetapp.Controllers
             return View(data);
         }
         
-       [Route("create")]
+       //[Route("create")]
         public IActionResult Create()
         {
             return View();
