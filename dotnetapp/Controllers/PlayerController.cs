@@ -8,8 +8,7 @@ using dotnetapp.Models;
 
 namespace dotnetapp.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+    
     public class PlayerController : Controller
     {
         private readonly ApplicationDbContext _context;
