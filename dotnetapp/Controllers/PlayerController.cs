@@ -3,10 +3,13 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+
 using dotnetapp.Models;
 
 namespace dotnetapp.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class PlayerController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -29,8 +32,6 @@ namespace dotnetapp.Controllers
             return View();
         }
 
-        
-        
         [HttpPost]
         public IActionResult Create(Player player)
         {
