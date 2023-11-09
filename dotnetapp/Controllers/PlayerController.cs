@@ -3,7 +3,6 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
-
 using dotnetapp.Models;
 
 namespace dotnetapp.Controllers
@@ -21,7 +20,7 @@ namespace dotnetapp.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            var data=from i in _context.Players select new{i.Id,i.Name,i.Category,i.BiddingAmount,i.TeamId,i.Team.Name};
+            var data=_context.Players;
             return View(data);
         }
         
@@ -105,6 +104,11 @@ namespace dotnetapp.Controllers
             TempData["req"]=1;
             var data=_context.Players.Find(p.Id);
             return View(data);
+        }
+        public IActionResult DisplayTeams()
+        {
+            var data=_context.Teams;
+            return(data);
         }
     }
 }

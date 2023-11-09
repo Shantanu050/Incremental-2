@@ -1,0 +1,16 @@
+@model IEnumerable<Team>
+<table class="table">
+<thead>
+    <th>@Html.DisplayNameFor(t=>t.Id)</th> 
+    <th>@Html.DisplayNameFor(t=>t.Name)</th> 
+</thead>
+<tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+        </tr>
+    }
+</tbody>
+</table>
