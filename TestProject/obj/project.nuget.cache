@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "nG5y41H/p5z7C9smlEk/d48zEMsHzc58RjlfR5/t7cnmau2h6wxXa/te30BdQDAoRyptoBnMTi4MfBqEcx1PGg==",
-  "success": false,
+  "dgSpecHash": "4+9mlYCSnF9OEdbKF37/hUnywSE1KYVyRBuxKqHQCi3Gvy4N/pi3qHiuToigRS//7qdffAvsquv8IoTSKxdaEQ==",
+  "success": true,
   "projectFilePath": "/home/coder/project/workspace/TestProject/TestProject.csproj",
   "expectedPackageFiles": [
     "/home/coder/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
@@ -53,7 +53,7 @@
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.0/microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.inmemory/6.0.0/microsoft.entityframeworkcore.inmemory.6.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.0/microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
-    "/home/coder/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.13/microsoft.entityframeworkcore.sqlserver.7.0.13.nupkg.sha512",
+    "/home/coder/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.0/microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.caching.memory/6.0.0/microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
@@ -185,15 +185,5 @@
     "/home/coder/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/home/coder/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.13 to 6.0.0. Reference the package directly from the project to select a different version. \n TestProject -> dotnetapp -> Microsoft.EntityFrameworkCore.SqlServer 7.0.13 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.13) \n TestProject -> dotnetapp -> Microsoft.EntityFrameworkCore.Relational (>= 6.0.0)",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
