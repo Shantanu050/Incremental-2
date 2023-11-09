@@ -19,19 +19,19 @@ namespace dotnetapp.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            var data=_context.Players;
+            var data=_context.Players.ToList();
             return View(data);
         }
         
        [Route("create")]
         public IActionResult Create()
         {
-             return View();
+            return View();
         }
 
+        
+        
         [HttpPost]
-       [Route("create")]
-
         public IActionResult Create(Player player)
         {
                 _context.Players.Add(player);
