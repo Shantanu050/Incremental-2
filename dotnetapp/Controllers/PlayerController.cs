@@ -21,7 +21,7 @@ namespace dotnetapp.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            var data=_context.Players.Include("Team").ToList();
+            var data=from i in _context.Players select new{i.Id,i.Name,i.Category,i.BiddingAmount,i.TeamId,i.Team.Name};
             return View(data);
         }
         
