@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-// using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 using dotnetapp.Models;
 
@@ -22,7 +22,7 @@ namespace dotnetapp.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            var data=_context.Players.ToList();
+            var data=_context.Players;
             return View(data);
         }
         
