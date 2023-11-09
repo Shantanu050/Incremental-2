@@ -56,27 +56,31 @@ namespace dotnetapp.Controllers
             editedPlayer.Name=player.Name;
             editedPlayer.Category=player.Category;
             editedPlayer.BiddingAmount=player.BiddingAmount;
-            editedPlayer.TeamId=player.TeamId;
+           // editedPlayer.TeamId=player.TeamId;
             _context.SaveChanges();
             return RedirectToAction("Index");
             }
             return View();
-        }
-        [HttpGet]
-        public IActionResult DeleteConfirmed(int id)
-        {
-             var data=_context.Players.Find(id);
-             return View(data);
+
+            
         }
         [HttpPost]
-        public IActionResult DeleteConfirmed(Player player)
+        public IActionResult DeleteConfirmed(int id)
         {
-            Player deletedPlayer=_context.Players.Find(player.Id);
-            _context.Players.Remove(deletedPlayer);
+             Player data=_context.Players.Find(id);
+            _context.Players.Remove(data);
             _context.SaveChanges();
-            return RedirectToAction("Index");
-
+             return View(data);
         }
+        // [HttpPost]
+        // public IActionResult DeleteConfirmed(Player player)
+        // {
+        //     Player deletedPlayer=_context.Players.Find(player.Id);
+        //     _context.Players.Remove(deletedPlayer);
+        //     _context.SaveChanges();
+        //     return RedirectToAction("Index");
+
+        // }
         [HttpGet]
         public IActionResult Delete(int id)
         {
