@@ -1,0 +1,11 @@
+@model Player
+@using(Html.BeginForm())
+{
+    @Html.DisplayNameFor(m=>m.Id)
+    <br>
+    @Html.EditorFor(m=>m.Id)
+    <br>
+    <input type="submit" class="btn btn-primary">
+
+}
+@if(T)

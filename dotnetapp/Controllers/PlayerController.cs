@@ -94,7 +94,18 @@ namespace dotnetapp.Controllers
             return RedirectToAction("Index");
 
         }
-        
+        public IActionResult FindPlayer()
+        {
+            TempData["req"]=0;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult FindPlayer(Player p)
+        {
+            TempData["req"]=1;
+            var data=_context.Players.Find(p.Id);
+            return View(data);
+        }
     }
 }
 
