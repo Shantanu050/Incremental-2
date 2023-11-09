@@ -64,12 +64,10 @@ namespace dotnetapp.Controllers
 
             
         }
-        [HttpPost]
+        
         public IActionResult DeleteConfirmed(int id)
         {
-             Player data=_context.Players.Find(id);
-            _context.Players.Remove(data);
-            _context.SaveChanges();
+             var data=_context.Players.Find(id);
              return View(data);
         }
         // [HttpPost]
@@ -81,7 +79,7 @@ namespace dotnetapp.Controllers
         //     return RedirectToAction("Index");
 
         // }
-        [HttpGet]
+        
         public IActionResult Delete(int id)
         {
              var data=_context.Players.Find(id);
