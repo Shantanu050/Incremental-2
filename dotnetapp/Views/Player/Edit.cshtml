@@ -1,0 +1,22 @@
+@model Player
+@using ( Html.BeginForm())
+{
+    @Html.DisplayNameFor(m=>m.Id)<br>
+    @Html.DisplayFor(m=>m.Id)
+    <br>
+    @Html.DisplayNameFor(m=>m.Name)<br>
+    @Html.EditorFor(m=>m.Name)
+    <br>
+    @Html.DisplayNameFor(m=>m.Category)<br>
+    @Html.EditorFor(m=>m.Category)
+    <br>
+    @Html.DisplayNameFor(m=>m.BiddingAmount)<br>
+    @Html.EditorFor(m=>m.BiddingAmount)
+    <br>
+    @Html.DisplayNameFor(m=>m.TeamId)<br>
+    @Html.EditorFor(m=>m.TeamId)
+    <br>
+    <br>
+    <input type="submit" class="btn btn-warning" value="Edit">
+
+}
