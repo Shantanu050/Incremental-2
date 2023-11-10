@@ -1,4 +1,5 @@
 @model IEnumerable<Player>
+<body style="background-color:lightgray;">
 <table class="table table-striped">
     <thead>
         <th>ID</th>
@@ -19,7 +20,7 @@
                 <td>@item.TeamId</td>
                 <td>@item.Team.Name</td>
                 <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id})</td>
-                <td>@using(Html.BeginForm("Edit","Player",new{id=item.Id})){<input type="submit" class="btn btn-warning">}
+                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id})</td>
             </tr>
         }
     </tbody>
@@ -27,3 +28,4 @@
 <center>@Html.ActionLink("Add Record","Create","Player")</center>
 <center>@Html.ActionLink("Find Player","FindPlayer","Player")</center>
 <center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center>
+</body>
