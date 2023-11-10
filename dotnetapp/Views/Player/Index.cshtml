@@ -24,6 +24,22 @@
         }
     </tbody>
 </table>
+@using(Html.BeginForm("Create","Player"))
+{
+  <input type="submit" class="btn btn-primary" value="Create">
+}
+<br>
+@using(Html.BeginForm("FindPlayer","Player"))
+{
+  <input type="submit" class="btn btn-primary" value="Find Player">
+}
+<br>
+@using(Html.BeginForm("DisplayTeams","Player"))
+{
+  <input type="submit" class="btn btn-primary" value="Display Teams">
+}
+
 <center>@Html.ActionLink("Add Record","Create","Player")</center>
 <center>@Html.ActionLink("Find Player","FindPlayer","Player")</center>
-<center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center>
+
+<center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center> 
