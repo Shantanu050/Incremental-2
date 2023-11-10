@@ -18,28 +18,12 @@
                 <td>@item.BiddingAmount</td>
                 <td>@item.TeamId</td>
                 <td>@item.Team.Name</td>
-                <td>@using(Html.BeginForm("Delete","Player",new{id=item.Id})){<input type="submit" class="btn btn-danger" value="Delete">}</td>
-                <td>@using(Html.BeginForm("Edit","Player",new{id=item.Id})){<input type="submit" class="btn btn-default" value="Edit">}</td>
+                <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id})</td>
+                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id})</td>
             </tr>
         }
     </tbody>
 </table>
-@using(Html.BeginForm("Create","Player"))
-{
-  <input type="submit" class="btn btn-primary" value="Create">
-}
-<br>
-@using(Html.BeginForm("FindPlayer","Player"))
-{
-  <input type="submit" class="btn btn-primary" value="Find Player">
-}
-<br>
-@using(Html.BeginForm("DisplayTeams","Player"))
-{
-  <input type="submit" class="btn btn-primary" value="Display Teams">
-}
-
 <center>@Html.ActionLink("Add Record","Create","Player")</center>
 <center>@Html.ActionLink("Find Player","FindPlayer","Player")</center>
-
-<center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center> 
+<center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center>
