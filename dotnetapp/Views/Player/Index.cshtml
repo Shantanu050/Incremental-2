@@ -19,7 +19,7 @@
                 <td>@item.TeamId</td>
                 <td>@item.Team.Name</td>
                 <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id})</td>
-                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id})</td>
+                <td>@using(Html.BeginForm("Edit","Player",new{id=item.Id})){<input type="submit" class="btn btn-warning">}
             </tr>
         }
     </tbody>

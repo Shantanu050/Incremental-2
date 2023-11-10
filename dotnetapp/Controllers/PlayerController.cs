@@ -49,19 +49,14 @@ namespace dotnetapp.Controllers
         [HttpPost]
         public IActionResult Edit(Player player)
         {
-            if(ModelState.IsValid)
-            {
+           
             Player editedPlayer=_context.Players.Find(player.Id);
             editedPlayer.Name=player.Name;
             editedPlayer.Category=player.Category;
             editedPlayer.BiddingAmount=player.BiddingAmount;
            // editedPlayer.TeamId=player.TeamId;
             _context.SaveChanges();
-            return RedirectToAction("Index");
-            }
-            return View();
-
-            
+            return RedirectToAction("Index"); 
         }
         
         public IActionResult DeleteConfirmed(int id)
