@@ -1,9 +1,9 @@
 @model Player
 @using(Html.BeginForm())
 {
-    @Html.DisplayNameFor(m=>m.Id)
+    <b>@Html.DisplayNameFor(m=>m.Id)</b>
     <p></p>
-    @Html.EditorFor(m=>m.Id,new{htmlAttributes=new{placeholder=""}})
+    @Html.EditorFor(m=>m.Id,new{htmlAttributes=new{placeholder="Enter Player Id here"}})
     <input type="submit" class="btn btn-primary" style="display: inline-flex;">
 
 }

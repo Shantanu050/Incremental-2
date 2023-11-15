@@ -10,6 +10,11 @@ a.navbar-brand {
 a {
   color: #0077cc;
 }
+li:hover
+{
+  font-weight: bold;
+  color: gray;
+}
 
 .btn-primary {
   color: #fff;

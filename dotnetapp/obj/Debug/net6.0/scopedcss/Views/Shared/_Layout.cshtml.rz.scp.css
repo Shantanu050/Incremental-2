@@ -10,6 +10,11 @@ a.navbar-brand[b-zy2lyeln6g] {
 a[b-zy2lyeln6g] {
   color: #0077cc;
 }
+li:hover[b-zy2lyeln6g]
+{
+  font-weight: bold;
+  color: gray;
+}
 
 .btn-primary[b-zy2lyeln6g] {
   color: #fff;

@@ -1,6 +1,5 @@
 @model IEnumerable<Player>
-<body style="background-color:lightgray;">
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover table-bordered">
     <thead>
         <th>ID</th>
         <th>Name</th>
@@ -8,6 +7,8 @@
         <th>Bidding Amount</th>
         <th>Team Id</th>
         <th>Team</th>
+        <th></th>
+        <th></th>
     </thead>
     <tbody>
         @foreach (var item in Model)
@@ -19,8 +20,8 @@
                 <td>@item.BiddingAmount</td>
                 <td>@item.TeamId</td>
                 <td>@item.Team.Name</td>
-                <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id})</td>
-                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id})</td>
+                <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id},new{@class="btn btn-danger"})</td>
+                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id},new{@class="btn btn-secondary"})</td>
             </tr>
         }
     </tbody>
@@ -28,4 +29,3 @@
 <center>@Html.ActionLink("Add Record","Create","Player")</center>
 <center>@Html.ActionLink("Find Player","FindPlayer","Player")</center>
 <center>@Html.ActionLink("Show Teams","DisplayTeams","Player")</center>
-</body>
