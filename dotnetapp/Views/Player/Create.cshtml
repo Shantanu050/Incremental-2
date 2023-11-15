@@ -3,17 +3,17 @@
 {
     @Html.DisplayNameFor(m=>m.Name)
     <br>
-    @Html.EditorFor(m=>m.Name)
+    @Html.EditorFor(m=>m.Name, new { htmlAttributes = new { placeholder = "Enter Player Name" } })
     <br>
     <br>
     @Html.DisplayNameFor(m=>m.Category)
     <br>
-    @Html.EditorFor(m=>m.Category)
+    @Html.EditorFor(m=>m.Category,new{htmlAttributes=new{placeholder="Enter Category"}})
     <br>
     <br>
     @Html.DisplayNameFor(m=>m.BiddingAmount)
     <br>
-    @Html.EditorFor(m=>m.BiddingAmount)
+    @Html.EditorFor(m=>m.BiddingAmount, new { htmlAttributes = new { placeholder = "Enter Bidding Amount" } })
     <br>
     <br>
     @Html.DisplayNameFor(m=>m.TeamId)
