@@ -43,10 +43,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0RlbGV0ZVBsYXllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/coder/project/workspace/dotnetapp/Views/Player/DisplayTeams.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0Rpc3BsYXlUZWFtcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/coder/project/workspace/dotnetapp/Views/Player/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -69,6 +65,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/coder/project/workspace/dotnetapp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/coder/project/workspace/dotnetapp/Views/Team/AddTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhbS9BZGRUZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/coder/project/workspace/dotnetapp/Views/Team/DisplayTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhbS9EaXNwbGF5VGVhbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/coder/project/workspace/dotnetapp/Views/_ViewImports.cshtml]

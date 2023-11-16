@@ -112,11 +112,7 @@ namespace dotnetapp.Controllers
             var data=_context.Players.Find(p.Id);
             return View(data);
         }
-        public IActionResult DisplayTeams()
-        {
-            var data=_context.Teams.ToList();
-            return View(data);
-        }
+
     }
 }
 

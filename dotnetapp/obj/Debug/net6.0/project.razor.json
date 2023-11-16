@@ -18389,6 +18389,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Team/AddTeam.cshtml",
+      "TargetPath": "Views\\Team\\AddTeam.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -18439,6 +18444,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Team/DisplayTeams.cshtml",
+      "TargetPath": "Views\\Team\\DisplayTeams.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/Edit.cshtml",
       "TargetPath": "Views\\Player\\Edit.cshtml",
       "FileKind": "mvc"
@@ -18446,11 +18456,6 @@
     {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/DisplayTeams.cshtml",
-      "TargetPath": "Views\\Player\\DisplayTeams.cshtml",
       "FileKind": "mvc"
     },
     {

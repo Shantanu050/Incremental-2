@@ -1,0 +1,8 @@
+@model dotnetapp.Models.Team
+@using(Html.BeginForm())
+{
+    @Html.DisplayNameFor(m=>m.Name)
+    <br>
+    @Html.EditorFor(m=>m.Name, new { htmlAttributes = new { placeholder = "Enter Player Name" } })
+    <br>
+}
