@@ -2,7 +2,7 @@
 @using(Html.BeginForm())
 {
     @Html.DisplayNameFor(m=>m.Name)
-    <br>
-    @Html.EditorFor(m=>m.Name, new { htmlAttributes = new { placeholder = "Enter Player Name" } })
-    <br>
+    <p></p>
+    @Html.EditorFor(m=>m.Name, new { htmlAttributes = new { placeholder = "Enter Team Name" } })
+    <input type="submit" class="btn btn-primary" style="display:inline-flex">
 }

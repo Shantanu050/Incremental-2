@@ -30,6 +30,7 @@ namespace dotnetapp.Controllers
         public IActionResult AddTeam(Team team)
         {
             _context.Teams.Add(team);
+            _context.SaveChanges();
             return RedirectToAction("DisplayTeams");
         }
     }
