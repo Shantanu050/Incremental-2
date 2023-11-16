@@ -24,7 +24,7 @@ namespace dotnetapp.Controllers
             return View(data);
         }
         
-       [Route("create")]
+       //[Route("create")]
         public IActionResult Create()
         {
             return View();
@@ -49,7 +49,7 @@ namespace dotnetapp.Controllers
         
         public IActionResult EditPlayer(int id)
         {
-            var data=_context.Players;
+            var data=_context.Players.Find(id);
             return View(data);
         }
         
@@ -68,7 +68,7 @@ namespace dotnetapp.Controllers
         
         public IActionResult DeleteConfirmed(int id)
         {
-             var data=_context.Players;
+             var data=_context.Players.Find(id);
              return View(data);
         }
         // [HttpPost]
