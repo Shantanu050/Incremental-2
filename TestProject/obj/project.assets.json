@@ -9657,37 +9657,39 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
-      "coverlet.collector >= 3.2.0",
-      "dotnetapp >= 1.0.0"
+      "dotnetapp >= 1.0.0",
+      "coverlet.collector >= 3.2.0"
     ]
   },
   "packageFolders": {
-    "/home/coder/.nuget/packages/": {}
+    "C:\\Users\\divak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/coder/project/workspace/TestProject/TestProject.csproj",
+      "projectUniqueName": "D:\\dotnet incremental project\\Week3\\dotnetapp\\TestProject\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "/home/coder/project/workspace/TestProject/TestProject.csproj",
-      "packagesPath": "/home/coder/.nuget/packages/",
-      "outputPath": "/home/coder/project/workspace/TestProject/obj/",
+      "projectPath": "D:\\dotnet incremental project\\Week3\\dotnetapp\\TestProject\\TestProject.csproj",
+      "packagesPath": "C:\\Users\\divak\\.nuget\\packages\\",
+      "outputPath": "D:\\dotnet incremental project\\Week3\\dotnetapp\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/coder/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\divak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj": {
-              "projectPath": "/home/coder/project/workspace/dotnetapp/dotnetapp.csproj"
+            "D:\\dotnet incremental project\\Week3\\dotnetapp\\dotnetapp\\dotnetapp.csproj": {
+              "projectPath": "D:\\dotnet incremental project\\Week3\\dotnetapp\\dotnetapp\\dotnetapp.csproj"
             }
           }
         }
@@ -9743,7 +9745,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.414/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
