@@ -353,18 +353,18 @@ D:/dotnet incremental project/Week3/dotnetapp/TestProject/obj/Debug/net6.0/TestP
 D:/dotnet incremental project/Week3/dotnetapp/TestProject/obj/Debug/net6.0/TestProject.genruntimeconfig.cache
 D:/dotnet incremental project/Week3/dotnetapp/TestProject/obj/Debug/net6.0/ref/TestProject.dll
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/CoverletSourceRootsMapping
+/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.deps.json
+/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.runtimeconfig.json
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/appsettings.Development.json
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/appsettings.json
+/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.staticwebassets.runtime.json
+/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/NUnit3.TestAdapter.dll
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/NUnit3.TestAdapter.pdb
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/nunit.engine.dll
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/nunit.engine.api.dll
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/nunit.engine.core.dll
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/testcentric.engine.metadata.dll
-/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.deps.json
-/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.runtimeconfig.json
-/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp.staticwebassets.runtime.json
-/home/coder/project/workspace/TestProject/bin/Debug/net6.0/dotnetapp
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/TestProject.deps.json
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/TestProject.runtimeconfig.json
 /home/coder/project/workspace/TestProject/bin/Debug/net6.0/TestProject.dll
