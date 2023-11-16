@@ -13,8 +13,8 @@
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
           "NUnit3TestAdapter": "4.4.2",
-          "dotnetapp": "1.0.0",
-          "coverlet.collector": "3.2.0"
+          "coverlet.collector": "3.2.0",
+          "dotnetapp": "1.0.0"
         },
         "runtime": {
           "TestProject.dll": {}
@@ -992,22 +992,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "5.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "5.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "5.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "5.1.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
