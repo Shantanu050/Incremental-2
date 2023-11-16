@@ -68,7 +68,7 @@ namespace dotnetapp.Controllers
         
         public IActionResult DeleteConfirmed(int id)
         {
-             var data=_context.Players.Find(id);
+             var data=_context.Players;
              return View(data);
         }
         // [HttpPost]
