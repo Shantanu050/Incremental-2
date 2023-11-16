@@ -18374,6 +18374,11 @@
   "RootNamespace": "dotnetapp",
   "Documents": [
     {
+      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/EditPlayer.cshtml",
+      "TargetPath": "Views\\Player\\EditPlayer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -18414,6 +18419,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/DeletePlayer.cshtml",
+      "TargetPath": "Views\\Player\\DeletePlayer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -18429,11 +18439,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/Edit.cshtml",
-      "TargetPath": "Views\\Player\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -18441,11 +18446,6 @@
     {
       "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/DisplayTeams.cshtml",
       "TargetPath": "Views\\Player\\DisplayTeams.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/coder/project/workspace/dotnetapp/Views/Player/Delete.cshtml",
-      "TargetPath": "Views\\Player\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

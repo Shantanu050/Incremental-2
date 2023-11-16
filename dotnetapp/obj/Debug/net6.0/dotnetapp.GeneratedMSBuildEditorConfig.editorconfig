@@ -35,16 +35,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/coder/project/workspace/dotnetapp/Views/Player/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0RlbGV0ZS5jc2h0bWw=
+[/home/coder/project/workspace/dotnetapp/Views/Player/DeletePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0RlbGV0ZVBsYXllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/coder/project/workspace/dotnetapp/Views/Player/DisplayTeams.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0Rpc3BsYXlUZWFtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/coder/project/workspace/dotnetapp/Views/Player/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0VkaXQuY3NodG1s
+[/home/coder/project/workspace/dotnetapp/Views/Player/EditPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWVyL0VkaXRQbGF5ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/coder/project/workspace/dotnetapp/Views/Player/FindPlayer.cshtml]

@@ -42,12 +42,19 @@ namespace dotnetapp.Controllers
     
         public IActionResult Edit(int id)
         {
-            var data=_context.Players.Find(id);
+            var data=_context.Players;
+            return View(data);
+        }
+
+        
+        public IActionResult EditPlayer(int id)
+        {
+            var data=_context.Players;
             return View(data);
         }
         
         [HttpPost]
-        public IActionResult Edit(Player player)
+        public IActionResult EditPlayer(Player player)
         {
            
             Player editedPlayer=_context.Players.Find(player.Id);
@@ -76,11 +83,16 @@ namespace dotnetapp.Controllers
         
         public IActionResult Delete(int id)
         {
+             var data=_context.Players;
+             return View(data);
+        }
+        public IActionResult DeletePlayer(int id)
+        {
              var data=_context.Players.Find(id);
              return View(data);
         }
         [HttpPost]
-        public IActionResult Delete(Player player)
+        public IActionResult DeletePlayer(Player player)
         {
             Player deletedPlayer=_context.Players.Find(player.Id);
             _context.Players.Remove(deletedPlayer);

@@ -21,7 +21,7 @@
                 <td>@item.TeamId</td>
                 <td>@item.Team.Name</td>
                 <td>@Html.ActionLink("Delete","Delete","Player",new{id=item.Id},new{@class="btn btn-danger"})</td>
-                <td>@Html.ActionLink("Edit","Edit","Player",new{id=item.Id},new{@class="btn btn-secondary"})</td>
+                <td>@Html.ActionLink("Edit","EditPlayer","Player",new{id=item.Id},new{@class="btn btn-secondary"})</td>
             </tr>
         }
     </tbody>
