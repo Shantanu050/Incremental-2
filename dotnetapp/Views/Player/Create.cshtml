@@ -16,11 +16,11 @@
     @Html.EditorFor(m=>m.BiddingAmount, new { htmlAttributes = new { placeholder = "Enter Bidding Amount" } })
     <br>
     <br>
-    @Html.DisplayNameFor(m=>m.TeamId)
-    <br>
-    @Html.EditorFor(m=>m.TeamId)
-    <br>
-    <br>
+    <label>Select Department</label>
+        <select asp-for="TeamId" asp-items="ViewBag.TeamId">
+        <option value=''>Select Team</option>
+        </select>
+        <br><br>
     <input type="submit" value="Add Player"/>
 
 }

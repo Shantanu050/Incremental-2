@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using dotnetapp.Models;
@@ -27,6 +28,7 @@ namespace dotnetapp.Controllers
        //[Route("create")]
         public IActionResult Create()
         {
+            ViewBag.TeamId=new SelectList(_context.Teams,"Id","Name");
             return View();
         }
 
@@ -49,6 +51,7 @@ namespace dotnetapp.Controllers
         
         public IActionResult EditPlayer(int id)
         {
+            
             var data=_context.Players.Find(id);
             return View(data);
         }
