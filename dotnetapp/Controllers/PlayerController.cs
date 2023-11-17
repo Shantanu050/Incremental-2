@@ -51,7 +51,7 @@ namespace dotnetapp.Controllers
         
         public IActionResult EditPlayer(int id)
         {
-            
+            ViewBag.TeamId=new SelectList(_context.Teams,"Id","Name");
             var data=_context.Players.Find(id);
             return View(data);
         }
@@ -64,7 +64,7 @@ namespace dotnetapp.Controllers
             editedPlayer.Name=player.Name;
             editedPlayer.Category=player.Category;
             editedPlayer.BiddingAmount=player.BiddingAmount;
-           // editedPlayer.TeamId=player.TeamId;
+            editedPlayer.TeamId=player.TeamId;
             _context.SaveChanges();
             return RedirectToAction("Index"); 
         }
